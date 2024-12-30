@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="30f2880f-4841-4f83-8a3e-f226a0a36e14" name="Changes" comment="test2 main" />
+    <list default="true" id="30f2880f-4841-4f83-8a3e-f226a0a36e14" name="Changes" comment="test5" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -28,7 +28,7 @@
 }]]></component>
   <component name="GithubPullRequestsUISettings"><![CDATA[{
   "selectedUrlAndAccountId": {
-    "url": "https://github.com/Us3rN3/Python.git",
+    "url": "https://github.com/Us3rN3/PythonTest2.git",
     "accountId": "35b45042-6e1a-4b52-8d80-d39127bea2ec"
   }
 }]]></component>
@@ -108,7 +108,7 @@
       <option name="presentableId" value="Default" />
       <updated>1719053499788</updated>
       <workItem from="1719053511229" duration="1940000" />
-      <workItem from="1735587956764" duration="1431000" />
+      <workItem from="1735587956764" duration="1840000" />
     </task>
     <task id="LOCAL-00001" summary="start">
       <option name="closed" value="true" />
@@ -142,7 +142,15 @@
       <option name="project" value="LOCAL" />
       <updated>1735589370703</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="test5">
+      <option name="closed" value="true" />
+      <created>1735589530516</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1735589530516</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -174,7 +182,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="start" />
     <MESSAGE value="test2 main" />
-    <option name="LAST_COMMIT_MESSAGE" value="test2 main" />
+    <MESSAGE value="test5" />
+    <option name="LAST_COMMIT_MESSAGE" value="test5" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/OEFENINGEN$Test.coverage" NAME="Test Coverage Results" MODIFIED="1735588741199" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/IDK" />
