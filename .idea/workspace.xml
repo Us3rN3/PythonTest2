@@ -5,7 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="30f2880f-4841-4f83-8a3e-f226a0a36e14" name="Changes" comment="test5">
-      <change beforePath="$PROJECT_DIR$/IDK/Test.py" beforeDir="false" afterPath="$PROJECT_DIR$/IDK/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IDK/gym_records.csv" beforeDir="false" afterPath="$PROJECT_DIR$/IDK/gym_records.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IDK/gym_records.db" beforeDir="false" afterPath="$PROJECT_DIR$/IDK/gym_records.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IDK/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/IDK/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,6 +55,7 @@
   "keyToString": {
     "Python.Test.executor": "Run",
     "Python.activate_this.executor": "Run",
+    "Python.main (1).executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
@@ -135,7 +139,7 @@
       <option name="presentableId" value="Default" />
       <updated>1719053499788</updated>
       <workItem from="1719053511229" duration="1940000" />
-      <workItem from="1735587956764" duration="2581000" />
+      <workItem from="1735587956764" duration="2909000" />
     </task>
     <task id="LOCAL-00001" summary="start">
       <option name="closed" value="true" />
@@ -215,5 +219,6 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/OEFENINGEN$Test.coverage" NAME="Test Coverage Results" MODIFIED="1735588741199" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/IDK" />
     <SUITE FILE_PATH="coverage/OEFENINGEN$activate_this.coverage" NAME="activate_this Coverage Results" MODIFIED="1719053544171" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.venv/Scripts" />
+    <SUITE FILE_PATH="coverage/OEFENINGEN$main__1_.coverage" NAME="main (1) Coverage Results" MODIFIED="1735590801132" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/IDK" />
   </component>
 </project>
