@@ -5,4 +5,4 @@ achternaam = "Verbeke"
 volledig = naam+" "+achternaam
 print(volledig)
 
-leeftijd = 19
+leeftijd = 18
