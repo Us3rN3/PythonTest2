@@ -1,3 +1,5 @@
+# gym_records_tool.py
+
 import sqlite3
 import os
 import csv
@@ -44,18 +46,54 @@ setup_database()
 
 # Database operations
 class GymRecords:
+    """
+    The GymRecords class provides an interface for interacting with the gym records database.
+
+    Methods:
+        add_exercise(name, weight, sets, reps, unit="kg"):
+            Adds a new exercise record to the database.
+
+        get_exercises(name=None):
+            Retrieves exercises from the database, optionally filtered by name.
+
+        export_to_csv(filename="gym_records.csv"):
+            Exports all exercise records to a CSV file.
+    """
+
     def __init__(self):
+        """
+        Initializes a new GymRecords object and connects to the database.
+        """
         self.conn = sqlite3.connect(DB_PATH)
 
-    def add_exercise(self, name, weight, sets, reps):
+    def add_exercise(self, name, weight, sets, reps, unit="kg"):
+        """
+        Adds a new exercise record to the database.
+
+        Parameters:
+            name (str): The name of the exercise.
+            weight (int): The weight used for the exercise.
+            sets (int): The number of sets performed.
+            reps (int): The number of repetitions per set.
+            unit (str): The unit of weight (e.g., 'kg' or 'lb'). Default is 'kg'.
+        """
         date = datetime.now().strftime("%Y-%m-%d")
         with self.conn:
             self.conn.execute(
                 "INSERT INTO exercises (name, weight, sets, reps, date) VALUES (?, ?, ?, ?, ?)",
-                (name, weight, sets, reps, date)
+                (name, f"{weight} {unit}", sets, reps, date)
             )
 
     def get_exercises(self, name=None):
+        """
+        Retrieves exercises from the database.
+
+        Parameters:
+            name (str, optional): The name of the exercise to filter by. Defaults to None.
+
+        Returns:
+            list: A list of tuples containing exercise records.
+        """
         query = "SELECT id, name, weight, sets, reps, date FROM exercises"
         params = []
         if name:
@@ -65,6 +103,12 @@ class GymRecords:
             return self.conn.execute(query, params).fetchall()
 
     def export_to_csv(self, filename="gym_records.csv"):
+        """
+        Exports all exercise records to a CSV file.
+
+        Parameters:
+            filename (str): The name of the CSV file to create. Default is 'gym_records.csv'.
+        """
         exercises = self.get_exercises()
         with open(filename, "w", newline="") as f:
             writer = csv.writer(f)
@@ -89,9 +133,10 @@ def main():
         if choice == "1":
             name = input("Exercise name: ")
             weight = int(input("Weight: "))
+            unit = input("Unit (kg or lb): ").strip() or "kg"
             sets = int(input("Sets: "))
             reps = int(input("Reps: "))
-            records.add_exercise(name, weight, sets, reps)
+            records.add_exercise(name, weight, sets, reps, unit)
             print("Exercise added.")
         elif choice == "2":
             name = input("Search by name (leave blank for all): ")
@@ -111,4 +156,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
